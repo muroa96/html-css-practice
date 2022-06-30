@@ -1,0 +1,15 @@
+p{
+  font-family: Montserrat;
+}
+
+.model{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.order{
+  font-size: 15px;
+}
+.touch{
+  text-decoration: underline;
+}
