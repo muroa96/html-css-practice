@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Button Practices</title>
+    <style>
+      div{
+        margin-bottom: 30px;
+      }
+     
+      button{
+        height: 35px;
+        font-size: 14px;
+        cursor: pointer;
+        font-family: Arial;
+      }
+      
+      .subscribe{
+        width: 110px;
+        background-color: #cc0000;
+        border: none;
+        transition: 0.15s;
+        color: white;
+      }
+      .subscribe:hover{
+        opacity: 0.8;
+      }
+
+      .join{
+        width: 60px;
+        text-align: center;
+        background-color: white;
+        color: #065fd4;
+        border-color: blue;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        border-width: 1px;
+        transition: 0.15s;
+        text-size-adjust: 100%;
+        margin-left: 12px;
+      }
+
+      .join:hover{
+        background-color: #004cff;
+        color: white;
+      }
+
+      .tweet{
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: white;
+        background-color: #1d9bf0;
+        border-radius: 50px;
+        font-weight: bold;
+        border-style: none;
+        margin-left: 12px;
+      }
+      
+      .numbering{
+        display: inline;
+        
+      }
+      span{
+        text-decoration: underline;
+      }
+      
+      
+      .Stretch{
+        font-size: 20px;
+        height: 40px;
+        width: 100px;
+        text-align: center;
+        color: white;
+        background-color: green;
+        border-style: none;
+        transition: transform .2s;
+      }
+      .Stretch:hover{
+        font-size: 20px;
+        transform: scale(1.5);
+      }
+      
+      .Shadow{
+        color: white;
+        background-color: green;
+        border-style: none;
+        font-size: 20px;
+        width: 100px;
+        height: 45px;
+        box-shadow: 5px 5px 5px rgba(4, 22, 17, 0.2);
+      }
+
+      .Shadow:active{
+        box-shadow:0 0 0;
+        transform: translateY(4px);
+      }
+
+      .one,
+      .two,
+      .three{
+        margin-right: 5px;
+        margin-left: 10px;
+        background-color: green;
+        color: white;
+        border-style: none;
+        font-size: large;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right:18px;
+        padding-left: 18px;
+      }
+
+      .one:hover,
+      .two:hover,
+      .three:hover{
+        margin-right:2.5px;
+        margin-left: 2.5px;
+        padding-left: 23px;
+        padding-right: 23px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">
+      <button class="subscribe">SUBSCRIBE</button>
+      <button class="join">JOIN</button>
+      <button class="tweet">Tweet</button>
+    </div>
+    
+    <div class="h4">
+      <button class="back">Back</button>
+      <p class="numbering">
+        <span>1</span>
+        <span>1</span>
+        <span>1</span>
+        <span>1</span>
+        <span>1</span>
+      </p>
+      <button class="next">Next</button>
+    </div>
+    
+    <div class="i4">
+      <button class="Stretch">Stretch</button>
+    </div>
+
+    <div class="j4">
+      <button class="Shadow">Shadow</button>
+    </div>
+    
+    <div class="k4">
+      <button class="one">One</button>
+      <button class="two">Two</button>
+      <button class="three">Three</button>
+    </div>
+  </body>
+</html>
