@@ -42,9 +42,8 @@
       
       .d8{
         margin-top: 20px;
-        max-width: 1000px;
-        width: auto;
       }
+
       .firstname,
       .lastname,
       .emails,
@@ -63,6 +62,57 @@
         display: block;
         margin-top: 10px;
         margin-bottom: 10px;
+      }
+
+      .sign{
+        border-radius: 10px;
+        text-align: center;
+        font-size: 20px;
+        height: 60px;
+        width: 400px;
+        display: block;
+        background-color: rgb(58,117,233);
+        color: white;
+        font-weight: bold;
+      }
+
+      .request{
+        font-size: 30px;
+        font-weight: 600;
+      }
+      
+      .location,
+      .destination{
+        display: block;
+        width: 350px;
+        font-size: 15px;
+        height: 35px;
+        border-style: none;
+        text-align: left;
+        background-color: rgb(241,239,241);
+        color: rgb(157,156,157);
+      }
+
+      .location{
+        margin-bottom: 5px;
+      }
+
+      .now,
+      .schedule{
+        margin-top: 25px;
+        height: 40px;
+      }
+
+      .now{
+        background-color: black;
+        color: white;
+        width: 120px;
+      }
+
+      .schedule{
+        width: 140px;
+        font-weight: bold;
+        border-style: none;
       }
     </style>
   </head>
@@ -88,6 +138,17 @@
       <input class="lastname" type="text" placeholder="Last name">
       <input class="emails" type="text" placeholder="Email">
       <button class="sign">Sign up</button>
+    </div>
+    <div class="e8">
+      <p class="request">Request a ride now</p>
+      <input class="location" type="text" placeholder="Enter pickup location">
+      <input class="destination" type="text" placeholder="Enter destination">
+      <button class="now">
+        Request now
+      </button>
+      <button class="schedule">
+        Schedule for later
+      </button>
     </div>
   </body>
 </html>

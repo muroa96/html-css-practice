@@ -3,14 +3,232 @@
   <head>
     <title>The div Element</title>
     <style>
-      .testdiv{
+      .red-square{
         background-color: red;
+        width: 100px;
+        height: 100px;
       }
+
+      .green-circle{
+        margin-top: 20px;
+        background-color: green;
+        width: 80px;
+        height: 80px;
+        border-radius: 500px;
+      }
+
+      .wrapping{
+        margin-top: 20px;
+        border-width: 2px;
+        border-style: solid;
+        width: 350px;
+        height: 100px;
+        border-color: rgb(238,237,238);
+      }
+
+      .service{
+        font-weight: bold;
+        padding-left: 20px;
+      }
+
+      .yes{
+        margin-left: 20px;
+      }
+
+      .d9{
+        background-color: black;
+        height: 130px;
+        width: 380px;
+      }
+
+      .install{
+        color: white;
+        font-weight: bold;
+        padding-left: 10px;
+        padding-top: 30px;
+        font-size: 20px;
+      }
+
+      .add{
+        color: rgb(114,113,114);
+        font-size: 15px;
+        padding-left: 10px;
+        padding-bottom: 30px;
+      }
+
+      .e9{
+        margin-top: 30px;
+        font-size:15px;
+        width: 380px;
+        box-shadow: 2px 1px 6px rgb(154,153,155); 
+      }
+
+      .cat2{
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: 30px;
+        width: 30px;
+        vertical-align: middle;
+        border-radius: 1000px;
+      }
+
+      .tweet{
+        margin-left: 130px;
+        vertical-align: middle;
+        border-style: none;
+        border-radius: 15px;
+        background-color: rgb(67,136,208);
+        color: white;
+        font-weight: bold;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-right: 10px;
+      }
+
+      .happen{
+        padding-left: 10px;
+        display: inline-block;
+        color: rgb(154,153,155);
+      }
+      p{
+        margin-left: 5px;
+      }
+      .f9,
+      .g1,
+      .g2{
+        display: inline-block;
+        margin-top: 50px;
+        margin-right: 10px;
+        width: 200px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      }
+
+      .cat3{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin-bottom: 12px;
+      }
+
+      .oliver{
+        font-weight: bold;
+        margin-bottom: 3px;
+      }
+
+      .two{
+        margin-top: 1px;
+        margin-bottom: 1px;
+      }
+
+      .friend{
+        background-color: rgb(24, 119, 242);
+        color: white;
+        border-style: none;
+        width: 120px;
+        height: 30px;
+        margin-left: 5px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+      }
+
+      .h9{
+        text-align: center;
+      }
+
+      .google{
+        margin-top: 15px;
+        display: block;
+        max-width: 220px;
+        max-height: 150px;
+        width: auto;
+        height: auto;
+        margin-left: 80px;
+        margin-bottom: 10px;
+      }
+
+      .searchbar{
+        display: block;
+        width: 400px;
+        height: 30px;
+        border-radius: 20px;
+        border-style: none;
+        padding-left: 13px;
+        box-shadow: 1px 2px 2px 2px rgb(169, 169, 169, 0.5);
+      
+      }
+
     </style>
   </head>
   <body>
-    <div class="testdiv">
-      
+    <div class="red-square"></div>
+    <div class="green-circle"></div>
+    <div class="wrapping">
+      <p class="service">
+        Satisfied with our service?
+      </p>
+      <button class="yes">Yes</button>
+      <button class="no">No</button>
+    </div>
+    <div class="d9">
+      <p class="install">
+        Install YouTube Music
+      </p>
+      <p class="add">
+        Add YouTube Music to your desktop for quick and easy access
+      </p>
+    </div>
+    <div class="e9">
+      <img class="cat2" src="cat.jpg">
+      <p class="happen">What's happening?</p>
+      <button class="tweet">Tweet</button>
+    </div>
+    <div class="f9">
+      <img class="cat3" src="cat.jpg">
+      <p class="oliver">
+        Oliver
+      </p>
+      <p class="two">
+        2 mutual friends
+      </p>
+      <button class="friend">
+        Add Friend
+      </button>
+    </div>
+    <div class="g1">
+      <img class="cat3" src="cat.jpg">
+      <p class="oliver">
+        Oliver
+      </p>
+      <p class="two">
+        2 mutual friends
+      </p>
+      <button class="friend">
+        Add Friend
+      </button>
+    </div>
+    <div class="g2">
+      <img class="cat3" src="cat.jpg">
+      <p class="oliver">
+        Oliver
+      </p>
+      <p class="two">
+        2 mutual friends
+      </p>
+      <button class="friend">
+        Add Friend
+      </button>
+    </div>
+    <div class="h9">
+      <img class="google" src="google.png">
+      <input class="searchbar" type="text" 
+      placeholder="Search Google or type a URL">
+      <button class="search">
+        Google Search
+      </button>
+      <button class="lucky">
+        I'm Feeling Lucky
+      </button>
     </div>
   </body>
 </html>
