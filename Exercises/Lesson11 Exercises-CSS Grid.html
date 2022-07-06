@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <Title>CSS Grid Practice</Title>
+    <style>
+      .a11{
+        display: grid;
+        grid-template-columns: 200px 75px;
+      }
+
+      .a11p1{
+        background-color: lightblue;
+      }
+
+      .a11p2{
+        background-color: lightpink;
+      }
+
+      .b11{
+        display: grid;
+        grid-template-columns: 50px 1fr 75px;
+      }
+
+      .c11{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="a11">
+      <p class="a11p1">200px</p>
+      <p class="a11p2">75px</p>
+    </div>
+
+    <div class="b11">
+      <p style="background-color:lightblue;">col1</p>
+      <p style="background-color:lightpink;">col2</p>
+      <p style="background-color:lightblue;">col3</p>
+    </div>
+
+    <div class="c11">
+      <p style="background-color:lightpink;">col1</p>
+      <p style="background-color:lightpink;">col2</p>
+      <p style="background-color:lightpink;">col3</p>
+      <p style="background-color:lightpink;">col4</p>
+      <p style="background-color:lightpink;">col1</p>
+      <p style="background-color:lightpink;">col2</p>
+      <p style="background-color:lightpink;">col3</p>
+      <p style="background-color:lightpink;">col4</p>
+
+    </div>
+  </body>
+</html>
