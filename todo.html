@@ -19,14 +19,15 @@
         document.body.appendChild(element);
       });
 
-      function toUpper(){
-        
-      }
-      
-      addTodo(todo1);
-      addTodo(todo2);
-      addTodo(todo3);
-      addTodo(todo4);
+      let arr=['a','b','c'];
+      arr.forEach(function(element) {
+        arr.unshift(arr.pop().toUpperCase);
+      });
+      console.log(arr);
+      // addTodo(todo1);
+      // addTodo(todo2);
+      // addTodo(todo3);
+      // addTodo(todo4);
     </script>
   </body>
 </html>
