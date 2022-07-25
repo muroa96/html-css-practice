@@ -1,33 +1,54 @@
 <!DOCTYPE html>
 <html>
   <head>
+
   </head>
   <body>
-    <button>Press me</button>
+    <input id= "todo-title" type="text" />
+    <input id="date-picker" type="date" />
+    <button onclick="addTodo()">Add Todo</button>
+
+    <div id="todo-list"></div>
     <script>
-      let todo1 = 'Get groceries';
-      let todo2 = 'Wash car';
-      let todo3 = 'Make dinner';
-      let todo4 = 'Do laundry';
+      const todos = [{
+        title: 'Get groceries',
+        DueDate: '2021-10-04'
+      }, {
+        title: 'Wash car',
+        DueDate: '2021-02-03'
+      }, {
+        title: 'Make dinner',
+        DueDate: '2021-03-04'
+      }];
 
-      let todos = ['Get groceries', 'Wash car', 'Make dinner'];
-      todos.push('another todo');
+      render();
 
-      todos.forEach(function(todoTitle) {
-        let element = document.createElement('div');
-        element.innerText = todoTitle;
-        document.body.appendChild(element);
-      });
+      function addTodo() {
+        const textbox = document.getElementById('todo-title');
+        const title = textbox.value;
+        
 
-      let arr=['a','b','c'];
-      arr.forEach(function(element) {
-        arr.unshift(arr.pop().toUpperCase);
-      });
-      console.log(arr);
-      // addTodo(todo1);
-      // addTodo(todo2);
-      // addTodo(todo3);
-      // addTodo(todo4);
+        const datePicker=document.getElementById('date-picker');
+        const dueDate = datePicker.value;
+        todo.push({
+          title: title,
+          dueDate: dueDate
+        });
+
+        render();
+      }
+      
+      function render() {
+        // reset our list
+        document.getElementById("todo-list").innerHTML="";
+
+        todos.forEach(function(todo) {
+          const element = document.createElement('div');
+          element.innerText = todo.title + ' ' + todo.dueDate;
+          const todoList = document.getElementById("todo-list");
+          todoList.appendChild(element);
+        });
+      }
     </script>
   </body>
 </html>

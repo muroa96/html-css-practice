@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <button id="todo-button" onclick="create()">Create todolist</button>
+    <button id = "done-button" onclick="done()">Done</button>
+    <div id="text-list"></div>
+    <input >
+    
+    <script>
+      function create() {
+        let textbox=document.createElement('input');
+        textbox.setAttribute("type","text");
+        document.text-list.appendChild(textbox);
+      };
+     
+      function done() {
+        let elements=document.getElementById('todo-button');
+        elements.innerText('Done');
+      };
+
+    </script>
+  </body>
+</html>
