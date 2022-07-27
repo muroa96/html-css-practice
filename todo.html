@@ -13,7 +13,17 @@
 
     <script>
       // Model
-      let todos = [{
+      // If localstorage has a todos array, the use it
+      // Otherwise use the default array.
+      let todos;
+
+      // Retrieve localStorage
+      const savedTodos = JSON.parse(localStorage.getItem('todos'));
+      // Check if it's an array 
+      if (Array.isArray(saveTodos)) {
+        todos = savedTodos;
+      } else {
+        todos = [{
         title: 'Get groceries',
         dueDate: '2021-10-04',
         id: 'id1'
@@ -26,6 +36,8 @@
         dueDate: '2021-03-04',
         id: 'id3'
       }];
+      }
+      
 
       
       // Creates a todo
@@ -37,6 +49,8 @@
           dueDate: dueDate,
           id: id
         });
+
+        //html
       }
 
       // Deletes a todo
@@ -50,6 +64,12 @@
             return true;
           }
          });
+
+         saveTodos();
+      }
+      
+      function saveTodos() {
+        localStorage.setItem('todos', JSON.stringify(todos));
       }
 
       // Controller
@@ -64,6 +84,8 @@
         render();
       }
       
+      const addTodo2 = todo=> 'string';
+
       function deleteTodo(event) {
          const deleteButton = event.target;
          const idToDelete = deleteButton.id;
